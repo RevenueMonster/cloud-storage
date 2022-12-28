@@ -1,4 +1,4 @@
-module github.com/myussufz/cloud-storage
+module github.com/revenuemonster/cloud-storage
 
 require (
 	cloud.google.com/go v0.37.2
