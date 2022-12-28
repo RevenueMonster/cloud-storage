@@ -20,6 +20,7 @@ var aliyunContentTypeMapper = map[string]func(filename string) []oss.Option{
 	ContentTypeJS:    aliyunContentTypeJS,
 	ContentTypeExcel: aliyunContentTypeExcel,
 	ContentTypeSVG:   aliyunContentTypeSVG,
+	ContentTypeWebp:  aliyunContentTypeWebP,
 }
 
 func aliyunContentTypeZip(filename string) []oss.Option {
@@ -115,6 +116,13 @@ func aliyunContentTypeExcel(filename string) []oss.Option {
 func aliyunContentTypeSVG(filename string) []oss.Option {
 	options := make([]oss.Option, 0)
 	options = append(options, oss.ContentType("image/svg+xml"))
+
+	return options
+}
+
+func aliyunContentTypeWebP(filename string) []oss.Option {
+	options := make([]oss.Option, 0)
+	options = append(options, oss.ContentType("image/webp"))
 
 	return options
 }

@@ -20,5 +20,6 @@ const (
 	ContentTypeJS    = "js"
 	ContentTypeExcel = "xlsx"
 	ContentTypeSVG   = "svg+xml"
+	ContentTypeWebp  = "webp"
 	ContentTypeAny   = ""
 )
